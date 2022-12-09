@@ -7,7 +7,6 @@ interface Props {
 }
 
 const NavLink = ({ title, link }: Props) => {
-  45;
   return (
     <NavLinkStyle>
       <Link href={`/${link}`}>{title}</Link>
@@ -19,7 +18,7 @@ const NavLinkStyle = styled.li`
   a {
     color: white;
     text-decoration: none;
-    font-size: 38;
+    font-size: 22px;
     font-family: "Bebas Neue";
   }
 `;

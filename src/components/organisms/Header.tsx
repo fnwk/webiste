@@ -11,10 +11,10 @@ const Header = () => {
   );
 };
 
-export default Header;
-
 const HeaderStyled = styled.nav`
   display: flex;
   padding-block: 20px;
   flex-direction: column;
 `;
+
+export default Header;
