@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import NavLink from "../../atoms/Header/NavLink";
+
 const links = [
   { title: "First", link: "" },
   { title: "tesda", link: "wdadw" },
@@ -9,7 +10,7 @@ const Nav = () => {
   return (
     <NavStyled>
       {links.map((el) => (
-        <NavLink title={el.title} link={el.link} />
+        <NavLink title={el.title} link={el.link} key={el.title} />
       ))}
     </NavStyled>
   );
