@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import prisma from "../../../lib/prisma";
-import { Response } from "../../../src/types/response";
+import { Response } from "../../../src/types/Response";
 import { ErrorsMessages, SuccessMessages } from "./../constants/messages";
 
 interface ExtendedNextApiRequest extends NextApiRequest {
