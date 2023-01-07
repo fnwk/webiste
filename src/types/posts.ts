@@ -1,11 +1,4 @@
-export type User = {
-  id: string;
-  name: string;
-  email: string;
-  createdAt: string;
-  updatedAt: string;
-  posts: Post[];
-};
+import { User } from "./user";
 
 export type Author = Omit<User, "posts" | "createdAt" | "updatedAt">;
 

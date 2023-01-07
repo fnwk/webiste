@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import prisma from "../../../lib/prisma";
-import { Response } from "../../../src/types/response";
+import { Response } from "../../../src/types/Response";
 import { ErrorsMessages, SuccessMessages } from "./../constants/messages";
 
 interface ExtendedNextApiRequest extends NextApiRequest {
@@ -18,13 +18,13 @@ export default async function handler(
   }
 
   try {
-    await prisma.post.delete({
+    await prisma.user.delete({
       where: {
         id,
       },
     });
 
-    return res.status(200).json({ message: SuccessMessages.postDeleted });
+    return res.status(200).json({ message: SuccessMessages.userDeleted });
   } catch (error) {
     res.status(404).send({ message: error });
   }

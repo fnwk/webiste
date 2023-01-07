@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import prisma from "../../../lib/prisma";
 import { Post } from "../../../src/types/posts";
-import { Response } from "../../../src/types/response";
+import { Response } from "../../../src/types/Response";
 
 export default async function handler(
   {}: NextApiRequest,
