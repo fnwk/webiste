@@ -7,4 +7,5 @@ export const SuccessMessages = {
   postUpdated: "Post updated successfully.",
   postDeleted: "Post deleted successfully.",
   postsDeleted: "Post deleted successfully.",
+  postNotFound: "Post not found.",
 };
